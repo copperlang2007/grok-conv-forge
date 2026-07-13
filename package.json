@@ -1,1 +1,36 @@
-...
+{
+  "name": "grok-conv-forge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Elite theBRIDGE Grok conversation to production app forge with Neon flywheel",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push",
+    "forge:extract": "tsx packages/core/src/extract.ts",
+    "deploy:cdk": "cd packages/cdk && cdk deploy",
+    "push:neon": "tsx scripts/push-outcome.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "tsx": "^4.16.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.4",
+    "drizzle-orm": "^0.32.0",
+    "zod": "^3.23.0"
+  }
+}
