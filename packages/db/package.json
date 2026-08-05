@@ -9,7 +9,7 @@
     "db:push": "drizzle-kit push"
   },
   "dependencies": {
-    "drizzle-orm": "^0.32.0",
+    "drizzle-orm": "^0.45.2",
     "@neondatabase/serverless": "^0.9.4"
   },
   "devDependencies": {
