@@ -1,0 +1,18 @@
+{
+  "name": "@grok-conv-forge/core",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/extractor.ts",
+  "types": "./src/extractor.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.4",
+    "drizzle-orm": "^0.32.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
