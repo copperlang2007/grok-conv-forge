@@ -1,0 +1,19 @@
+{
+  "name": "@grok-conv-forge/db",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/schema.ts",
+  "types": "./src/schema.ts",
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.0",
+    "@neondatabase/serverless": "^0.9.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "typescript": "^5.5.0"
+  }
+}
